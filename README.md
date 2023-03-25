@@ -240,8 +240,7 @@ Below Screenshot will keep this format.
   Because the previous difference, the angle of sim to slide is distinct. **Explicit Euler** and **Implicit Euler** slide with its edge, while **Midpoint** and **Ronge Kutta Fourth** slide with its face.
 
   ![](https://i.imgur.com/3gmnYaV.png)![](https://i.imgur.com/YldJuzd.png)
-
-![](https://i.imgur.com/4W0QQGw.png)![](https://i.imgur.com/cwwNQIm.png)
+  ![](https://i.imgur.com/4W0QQGw.png)![](https://i.imgur.com/cwwNQIm.png)
 
 + First Touch Margin
 
