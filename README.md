@@ -246,8 +246,6 @@ Below Screenshot will keep this format.
 + First Touch Margin
 
   **Explicit Euler** and **Implicit Euler** slide out and quickly fall back, the **Midpoint** one stay a bit longer time then falling back, and the **Ronge Kutta Fourth** almost stay in there but eventually fall back to hole.
-  ![image-20230325113130169](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113130169.png)![image-20230325113150425](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113150425.png)
-  ![image-20230325113227799](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113227799.png)![image-20230325113106514](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113106514.png)
 
 + Second Touch Margin
 
@@ -255,43 +253,13 @@ Below Screenshot will keep this format.
 
   The **Midpoint** turns approximately 30 degree, and the **Ronge Kutta Fourth** turns almost 90 degree.
 
-  ![image-20230325113450928](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113450928.png) ![image-20230325113520815](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113520815.png)
-  ![image-20230325113558937](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113558937.png) ![image-20230325113635958](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325113635958.png)
-
-### Effect of parameters 
-
-+ Spring Coefficient 
-  1000、2000、4000、8000, obviously bounce higher
-  ![image-20230325120119768](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325120119768.png) ![image-20230325115929486](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325115929486.png) 
-  ![image-20230325115949268](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325115949268.png) ![image-20230325120007706](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325120007706.png)
-
-+ Damper Coefficient
-  10
-
-  ![image-20230325120526028](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325120526028.png) ![image-20230325120559727](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325120559727.png)
-  60
-
-  ![image-20230325120348301](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325120348301.png) ![image-20230325120634715](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325120634715.png)
-
-+ Resist Coefficient
-  0.8 : ![image-20230325134249227](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134249227.png)0.2 : ![image-20230325134155176](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134155176.png)
-
-+ Friction Coefficient
-
-  0.2 : ![image-20230325134249227](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134249227.png)0.8 : ![image-20230325134334649](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134334649.png)
-
-+ Jelly Rotation
-
-  Deformation Duration
-  <img src="C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134430173.png" alt="image-20230325134430173" style="zoom: 80%;" /> ![image-20230325134453798](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134453798.png)
-
-  ![image-20230325134513810](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134513810.png)![image-20230325134543625](C:\Users\wujoe\AppData\Roaming\Typora\typora-user-images\image-20230325134543625.png)
-
 ## Conclusion
 
 In this project, we simulate many force and influence factors to show the difference between integrate methods. In general, adjust the spring coefficient and damper coefficient much lower and enhance friction coefficient will simulate just like a real sim there. Depending on situations, we can choose different method to  implement.
+
 **Explicit** is much simple but not seems real at local part.
 **Implicit** also not seems real at local part, but is much reasonable in this project.
 **Midpoint** can observe the deformation and is the most suitable method in this method.
 **Ronge Kutta** can observe the deformation at local part, but it may be much stubborn and heavy when simulating the sim.
+
 Above all, not every situation has the commonly best answer. If so, we also need to simulate every part as a real world, such as the small force inside, but it is not essential and necessary. Under the simulation, we can trial and error and see the much closer to the reality or imagine one.
